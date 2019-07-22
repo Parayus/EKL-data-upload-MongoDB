@@ -39,7 +39,7 @@ for i in range(len(allObjects)):
     allObjects[i]["uploadTime"] = str(allObjects[i]["uploadTime"])
     allObjects[i]["_id"] = str(allObjects[i]["_id"])
     allObjects[i]["id"] = str(allObjects[i]["_id"])
-    del allObjects[i]["_id"]
+    del allObjects[i]["_id"]                        # deleting '_id' key as its collides with in built id of elasticsearch key
 
 
 
