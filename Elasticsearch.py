@@ -6,9 +6,9 @@ import elasticsearch
 import datetime
 
 
-myclient = pymongo.MongoClient("mongodb://kettleusrmongo:k3Tt13U53rPr06m0n0g0@uat.kettle.chaayos.com:27017/admin?authSource=admin&connectTimeoutMS=300000")
-mydb = myclient["kettle_analytics"]
-mycol = mydb["wsCrashLog"]
+myclient = pymongo.MongoClient("Enter_Client_Link")
+mydb = myclient["Enter_Client_Name"]
+mycol = mydb["Enter_DB_Name"]
 
 es = Elasticsearch([{"host":"localhost","port":9200}])
 if es.indices.exists(index="crashlog"):
