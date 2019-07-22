@@ -18,4 +18,6 @@ As database at whcih I was working is a growing database I need to import only n
 Inorder to solve the above mentioned problem I got the uploadtime of the latest uploaded data in order to compare the uploadtime of data present in database and fetch new data only. 
 This saves memory and processing as database will grow bigger.
 
+Note- If a key name '_id' exists change its key name as it wil return error as it collides with '_id' of elasticsearch 
+
 Finally,use kibana to analyse your data.
