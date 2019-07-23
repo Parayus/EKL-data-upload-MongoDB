@@ -14,7 +14,7 @@ Converting object to Json - Inorder this to happen the data set should be of typ
 Uploading Data to elasticsearch - To keep '_id' unique of the uploading data we used timestamp to solve the problem.
 
 Our current solution is good for small database.
-As database at whcih I was working is a growing database I need to import only new data that occured on my database.
+As database at which I was working is a growing database I need to import only new data that occured on my database.
 Inorder to solve the above mentioned problem I got the uploadtime of the latest uploaded data in order to compare the uploadtime of data present in database and fetch new data only. 
 This saves memory and processing as database will grow bigger.
 
